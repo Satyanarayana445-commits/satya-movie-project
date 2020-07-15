@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="{%static "css/movie.css" %}">
+    <title></title>
+  </head>
+  <body>
+    <div class="container" align="center">
+    <h1>Movie information</h1>
+    {%if m1%}
+    <table class="table">
+      <thead>
+        <th>name</th>
+        <th>hero</th>
+        <th>heroine</th>
+        <th>rating</th>
+      </thead>
+      {%for m2 in m1%}
+      <tr>
+        <td>{{m2.name}}</td>
+        <td>{{m2.hero}}</td>
+        <td>{{m2.heroine}}</td>
+        <td>{{m2.rating}}</td>
+      </tr>
+      {%endfor%}
+  </table>
+  {%endif%}
+        </div>
+  </body>
+</html>

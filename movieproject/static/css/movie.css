@@ -1,0 +1,26 @@
+body{
+  background:url("https://images.unsplash.com/photo-1591065392726-3923abfd3e38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .jumbotron{
+  margin-top: 200px;
+  background:pink;
+  color:black;
+}
+.table{
+  border:2px solid blue;
+}
+thead th{
+  background: red;
+  border:2px solid blue;
+  font-size: 30px;
+  margin:auto;
+}
+tr td{
+  
+  border:2px solid blue;
+  font-size: 30px;
+  margin:auto;
+}
